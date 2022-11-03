@@ -1,0 +1,39 @@
+.app {
+    background: #f1f1f1;
+    display: grid;
+    grid-template-areas: 
+        "encabezado"
+        "contenido"
+        "rodapie"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto 50px;
+}
+
+.encabezado {
+    align-items: center;
+    display: flex;
+    grid-area: encabezado;
+    padding: 0 2rem;
+}
+
+.menu__link{
+    color:#333333;
+    padding: 0.5rem 1rem;
+}
+
+.menu__link:hover, .menu_link:active{
+    border-bottom: 2px solid #0073e6;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.rodapie { 
+    background-color: #fdfdfd;
+    color:#333333;
+    text-align: center;
+    grid-area: rodapie;
+    padding: 1.5rem;
+}
